@@ -1,0 +1,103 @@
+<form #vehiculeFormAjout="ngForm" id="vehiculeFormAjout">
+    <mat-form-field class="input-full-width">
+        <input type="text" name="nom" required minlength="2" maxlength="50" [(ngModel)]="newVehicule.nom" matInput #nom="ngModel" placeholder="Nom">
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('required')">Le nom est obligatoire.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">Le nom doit contenir au moins 2 caractères.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">Le nom doit contenir au maximum 50 caractères.</mat-error>
+    </mat-form-field>
+    <mat-form-field class="input-full-width">
+        <input type="text" name="constructeur" required minlength="2" maxlength="50" [(ngModel)]="newVehicule.constructeur" matInput #constructeur="ngModel" placeholder="Constructeur">
+        <mat-error *ngIf="constructeur.invalid && (constructeur.dirty || constructeur.touched) && nom.hasError('required')">Le constructeur est obligatoire.</mat-error>
+        <mat-error *ngIf="constructeur.invalid && (constructeur.dirty || constructeur.touched) && nom.hasError('minlength')">Le constructeur doit contenir au moins 2 caractères.</mat-error>
+        <mat-error *ngIf="constructeur.invalid && (constructeur.dirty || constructeur.touched) && nom.hasError('maxlength')">Le constructeur doit contenir au maximum 50 caractères.</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="input-full-width">
+        <input type="text" name="origine" required minlength="2" maxlength="50" [(ngModel)]="newVehicule.origine" matInput #origine="ngModel" placeholder="Origine">
+        <mat-error *ngIf="origine.invalid && (origine.dirty || origine.touched) && nom.hasError('required')">L'origine est obligatoire.</mat-error>
+        <mat-error *ngIf="origine.invalid && (origine.dirty || origine.touched) && nom.hasError('minlength')">L'origine doit contenir au moins 2 caractères.</mat-error>
+        <mat-error *ngIf="origine.invalid && (origine.dirty || origine.touched) && nom.hasError('maxlength')">L'origine doit contenir au maximum 50 caractères.</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="input-full-width">
+        <input type="text" name="type" required [(ngModel)]="type" matInput #typeVehicule="ngModel" placeholder="Type">
+        <button matSuffix mat-icon-button color="primary" (click)="ajouterType()"><i class="material-icons">add</i></button>
+        <mat-error *ngIf="typeVehicule.invalid && (typeVehicule.dirty || typeVehicule.touched) && typeVehicule.hasError('required')">La catégorie est obligatoire.</mat-error>
+    </mat-form-field>
+    <span *ngFor="let element of newVehicule.type"><br>{{element}}</span>
+    <br>
+    <mat-form-field class="input-full-width">
+        <input type="number" name="prix" required [(ngModel)]="newVehicule.prix" matInput #prix="ngModel" placeholder="Prix">
+        <mat-error *ngIf="prix.invalid && (prix.dirty || prix.touched) && prix.hasError('required')">Le prix est obligatoire.</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="input-full-width">
+        <input type="number" name="chevaux" required [(ngModel)]="newVehicule.chevaux" matInput #chevaux="ngModel" placeholder="Chevaux">
+        <mat-error *ngIf="chevaux.invalid && (chevaux.dirty || chevaux.touched) && chevaux.hasError('required')">Le nombre de chevaux est obligatoire.</mat-error>
+    </mat-form-field>
+    <mat-form-field class="input-full-width">
+        <input type="number" name="torque" required [(ngModel)]="newVehicule.torque" matInput #torque="ngModel" placeholder="Torque">
+        <mat-error *ngIf="torque.invalid && (torque.dirty || torque.touched) && torque.hasError('required')">Le torque est obligatoire.</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Date de production</mat-label>
+        <input name="date" [(ngModel)]="date" matInput [matDatepicker]="datepicker">
+        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker>
+          <mat-datepicker-actions>
+            <button mat-button matDatepickerCancel>Cancel</button>
+            <button mat-raised-button color="primary" matDatepickerApply (click)="ajouterDate()">Appliquer</button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+    <br>
+    <mat-checkbox class="example-margin" name="accidenteCoche" [(ngModel)]="accidenteCoche" (click)="changerAccidente()">Accidenté</mat-checkbox>
+    <br>
+    <mat-checkbox class="example-margin" name="financementCoche" [(ngModel)]="financementCoche" (click)="changerFinancement()">Financement</mat-checkbox>
+    <br>
+    <section class="example-section">
+        <mat-form-field class="input-full-width">
+            <input type="text" name="traitement"  minlength="2" maxlength="50" [(ngModel)]="nom_traitement" matInput #nom="ngModel" placeholder="Nom traitement">
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">Le nom du traitement doit contenir au moins 2 caractères.</mat-error>
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">Le nom du traitement doit contenir au maximum 50 caractères.</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="input-full-width">
+            <input type="number" name="traitement"  min="0" max="10000" [(ngModel)]="prix_traitement" matInput #nom="ngModel" placeholder="Prix traitement">
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('min')">Le prix minimal du traitement est de 0 $.</mat-error>
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('max')">Le prix maximal du traitement est de 10 000 $.</mat-error>
+            <button matSuffix mat-icon-button color="primary" (click)="ajouterListeTraitement()"><i class="material-icons">add</i></button>
+        </mat-form-field>
+
+    </section>
+    <span *ngFor="let element of newVehicule.liste_traitement"><br>{{element.nom_traitement}}, {{element.prix}}</span>
+    <br>
+    <section class="example-section">
+        <mat-form-field class="input-full-width">
+            <input type="text" name="proprietaire"  minlength="2" maxlength="50" [(ngModel)]="prenom_proprietaire" matInput #nom="ngModel" placeholder="Prénom proripétaire">
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">Le prénom du propriétaire doit contenir au moins 2 caractères.</mat-error>
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">Le prénom du propriétaire doit contenir au maximum 50 caractères.</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="input-full-width">
+            <input type="text" name="proprietaire"  minlength="2" maxlength="50" [(ngModel)]="nom_proprietaire" matInput #nom="ngModel" placeholder="Nom proripétaire">
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">Le nom du propriétaire doit contenir au moins 2 caractères.</mat-error>
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">Le nom du propriétaire doit contenir au maximum 50 caractères.</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="input-full-width">
+            <input type="tel" name="proprietaire" [(ngModel)]="telephone_proprietaire" matInput #nom="ngModel" placeholder="Téléphone proripétaire" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('pattern')">Le téléphone du propriétaire doit avoir un format valide.</mat-error>
+            <button matSuffix mat-icon-button color="primary" (click)="ajouterListeProprietaire()"><i class="material-icons">add</i></button>
+        </mat-form-field>
+        <small>Format: 123-456-7890</small>
+
+    </section>
+    <span *ngFor="let element of newVehicule.liste_proprietaire"><br>{{element.prenom}}, {{element.nom}}, {{element.telephone}}</span>
+    <br>
+
+    <button matSuffix  type="submit" mat-icon-button color="primary" [disabled]="!vehiculeFormAjout.form.valid" (click)="onAdd(vehiculeFormAjout)"><i class="material-icons">add</i></button>
+
+    <small [hidden]="!afficherMessageAjout">Véhicule ajouté</small>
+</form>

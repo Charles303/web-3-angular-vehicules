@@ -1,0 +1,13 @@
+<form #vehiculeFormAjout="ngForm" id="vehiculeFormAjout">
+    <mat-form-field class="input-full-width">
+        <input type="text" name="nom" required minlength="2" maxlength="50" [(ngModel)]="idVehicule" matInput #nom="ngModel" placeholder="Id">
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('required')">Le id est obligatoire.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">Le id doit contenir au moins 2 caractères.</mat-error>
+        <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">Le id doit contenir au maximum 50 caractères.</mat-error>
+    </mat-form-field>
+    
+
+    <button matSuffix  type="submit" mat-icon-button color="primary" [disabled]="!vehiculeFormAjout.form.valid" (click)="onDelete(idVehicule)"><i class="material-icons">add</i></button>
+
+    <small [hidden]="!afficherMessageDelete">Véhicule supprimé: </small>
+</form>
