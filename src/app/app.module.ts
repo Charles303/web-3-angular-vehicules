@@ -33,6 +33,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SuppressionVehiculeComponent } from './suppression-vehicule/suppression-vehicule.component';
+import { StatistiquesComponent } from './statistiques/statistiques.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SuppressionVehiculeComponent } from './suppression-vehicule/suppression
     PiedDePageComponent,
     InfosVehiculeComponent,
     FormulaireAjoutComponent,
-    SuppressionVehiculeComponent
+    SuppressionVehiculeComponent,
+    StatistiquesComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

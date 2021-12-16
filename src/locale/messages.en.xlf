@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="6460288074979376135" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>add<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>Ajout d&apos;un véhicule</source>
+        <target><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>add<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>Add vehicle</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8339872291647996284" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>view_list<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>Infos véhicules</source>
+        <target><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>view_list<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>List vehicles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4368207993451288398" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>delete<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>Suppresion véhicule</source>
+        <target><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>delete<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>Delete vehicle</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7947327871842229824" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/> insert_chart_outlined<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>Statistiques</source>
+        <target><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/> insert_chart_outlined<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/>Stats</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4987184606218761556" datatype="html">
+        <source>Date de production</source>
+        <target>Production date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/formulaire-ajout/formulaire-ajout.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5949170501131380531" datatype="html">
+        <source>Accidenté</source>
+        <target>Damaged</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/formulaire-ajout/formulaire-ajout.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4835647059650984122" datatype="html">
+        <source>Financement</source>
+        <target>Funding</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/formulaire-ajout/formulaire-ajout.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2595403790469612954" datatype="html">
+        <source>Véhicule ajouté</source>
+        <target>Vehicle added</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/formulaire-ajout/formulaire-ajout.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2038082152527034775" datatype="html">
+        <source> Nom </source>
+        <target> Name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2388695658228333143" datatype="html">
+        <source> Constructeur </source>
+        <target> Manufacturer </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8431177820955885695" datatype="html">
+        <source> Origine </source>
+        <target> Origin </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8145390208854299854" datatype="html">
+        <source> Prix </source>
+        <target> Price </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="838729533194561847" datatype="html">
+        <source> Chevaux </source>
+        <target> Horsepower </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5787863742401258733" datatype="html">
+        <source> Date production </source>
+        <target> Production date </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2078144486646109195" datatype="html">
+        <source> Accidenté </source>
+        <target> Damaged </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7978178154349023743" datatype="html">
+        <source> Financement </source>
+        <target> Funding </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5800761702266372202" datatype="html">
+        <source> Liste traitement </source>
+        <target> Treatment list </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5307532203239967525" datatype="html">
+        <source> Liste propriétaire </source>
+        <target> Owner list </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/infos-vehicule/infos-vehicule.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3250950015181660048" datatype="html">
+        <source>Fait par : Charles Lavoie</source>
+        <target>By : Charles Lavoie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pied-de-page/pied-de-page.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7039283871321335169" datatype="html">
+        <source>Prix moyen par type(catégorie) de véhicules</source>
+        <target>Average price by type(categories) of vehicles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistiques/statistiques.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4159289790061756675" datatype="html">
+        <source> Catégories </source>
+        <target> Categories </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistiques/statistiques.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2804425042488783991" datatype="html">
+        <source> Moyenne </source>
+        <target> Average </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistiques/statistiques.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2405809069724412704" datatype="html">
+        <source>Nombre de véhicules pas type(catégorie)</source>
+        <target>Number of vehicles by type(categories)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistiques/statistiques.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4708445325509698260" datatype="html">
+        <source> Construceur </source>
+        <target> Manufacturer </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistiques/statistiques.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4125094445059135394" datatype="html">
+        <source> Nombre de véhicules </source>
+        <target> Number of vehicles </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/statistiques/statistiques.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3812256175105338005" datatype="html">
+        <source> - Utiliser id du véhicule à supprimer</source>
+        <target> - Use id of the vehicle to delete</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/suppression-vehicule/suppression-vehicule.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2589554375697855329" datatype="html">
+        <source> - ! Peut trouver l&apos;id dans la tables des véhicules (infos véhicules)</source>
+        <target> - ! Can find vehicle id in the list of vehicles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/suppression-vehicule/suppression-vehicule.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

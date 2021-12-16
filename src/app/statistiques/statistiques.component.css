@@ -1,0 +1,11 @@
+.margin{
+    margin: 5;
+}
+
+.mat-row {
+    height: auto;
+  }
+  
+  .mat-cell {
+    padding: 20px 20px 20px 0;
+  }

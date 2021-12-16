@@ -1,6 +1,8 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Vehicule } from './vehicule';
+import { StatistiquePrix } from './statistiquePrix';
+import { StatistiqueNb } from './statistiqueNb';
 import { Observable } from 'rxjs';
 
 const httpOptions = {
@@ -33,12 +35,12 @@ export class VehiculesService {
   }
 
   //Stats
-  getVehiculeStatsPrixMoyen(): Observable<Vehicule> {
-    return this.http.get<Vehicule>(this.vehiculesUrl + 'stats/prix-moyen-type', httpOptions);
+  getVehiculeStatsPrixMoyen(): Observable<StatistiquePrix[]> {
+    return this.http.get<StatistiquePrix[]>(this.vehiculesUrl + 'vehicules/stats/prix-moyen-type', httpOptions);
   }
 
-  getVehiculeStatsNbParConstructeur(): Observable<Vehicule> {
-    return this.http.get<Vehicule>(this.vehiculesUrl + 'stats/nb-par-constructeur', httpOptions);
+  getVehiculeStatsNbParConstructeur(): Observable<StatistiqueNb[]> {
+    return this.http.get<StatistiqueNb[]>(this.vehiculesUrl + 'vehicules/stats/nb-par-constructeur', httpOptions);
   }
 
   //Post

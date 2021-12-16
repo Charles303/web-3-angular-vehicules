@@ -13,10 +13,17 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "en": "src/locale/messages.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": false,
             "outputPath": "dist/angularVehicule",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,6 +40,11 @@
             "scripts": []
           },
           "configurations": {
+            "en": {
+              "localize": [
+                "en"
+              ]
+            },
             "production": {
               "budgets": [
                 {
@@ -73,6 +85,9 @@
             },
             "development": {
               "browserTarget": "angularVehicule:build:development"
+            },
+            "en": {
+              "browserTarget": "angularVehicule:build:en"
             }
           },
           "defaultConfiguration": "development"

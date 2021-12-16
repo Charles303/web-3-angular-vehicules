@@ -12,19 +12,19 @@
   
     <!-- Name Column -->
     <ng-container matColumnDef="nom">
-        <th mat-header-cell *matHeaderCellDef> Nom </th>
+        <th mat-header-cell *matHeaderCellDef i18n> Nom </th>
         <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
     </ng-container>
   
     <!-- Weight Column -->
     <ng-container matColumnDef="constructeur">
-      <th mat-header-cell *matHeaderCellDef> Constructeur </th>
+      <th mat-header-cell *matHeaderCellDef i18n> Constructeur </th>
       <td mat-cell *matCellDef="let element"> {{element.constructeur}} </td>
     </ng-container>
   
     <!-- Symbol Column -->
     <ng-container matColumnDef="origine">
-      <th mat-header-cell *matHeaderCellDef> Origine </th>
+      <th mat-header-cell *matHeaderCellDef i18n> Origine </th>
       <td mat-cell *matCellDef="let element"> {{element.origine}} </td>
     </ng-container>
 
@@ -35,12 +35,12 @@
     </ng-container>
 
     <ng-container matColumnDef="prix">
-        <th mat-header-cell *matHeaderCellDef> Prix </th>
-        <td mat-cell *matCellDef="let element"> {{element.prix}} </td>
+        <th mat-header-cell *matHeaderCellDef i18n> Prix </th>
+        <td mat-cell *matCellDef="let element">{{ element.prix | currency : 'en-US' }} </td>
     </ng-container>
 
     <ng-container matColumnDef="chevaux">
-        <th mat-header-cell *matHeaderCellDef> Chevaux </th>
+        <th mat-header-cell *matHeaderCellDef i18n> Chevaux </th>
         <td mat-cell *matCellDef="let element"> {{element.chevaux}} </td>
     </ng-container>
 
@@ -50,27 +50,27 @@
     </ng-container>
 
     <ng-container matColumnDef="date_production">
-        <th mat-header-cell *matHeaderCellDef> Date production </th>
+        <th mat-header-cell *matHeaderCellDef i18n> Date production </th>
         <td mat-cell *matCellDef="let element"> {{element.date_production}} </td>
     </ng-container>
 
     <ng-container matColumnDef="accidente">
-        <th mat-header-cell *matHeaderCellDef> Accidenté </th>
+        <th mat-header-cell *matHeaderCellDef i18n> Accidenté </th>
         <td mat-cell *matCellDef="let element"> {{element.accidente}} </td>
     </ng-container>
 
     <ng-container matColumnDef="financement">
-        <th mat-header-cell *matHeaderCellDef> Financement </th>
+        <th mat-header-cell *matHeaderCellDef i18n> Financement </th>
         <td mat-cell *matCellDef="let element"> {{element.financement}} </td>
     </ng-container>
 
     <ng-container matColumnDef="liste_traitement">
-        <th mat-header-cell *matHeaderCellDef> Liste traitement </th>
+        <th mat-header-cell *matHeaderCellDef i18n> Liste traitement </th>
         <td mat-cell *matCellDef="let element"><span *ngFor="let traitement of element.liste_traitement">/{{traitement.nom_traitement}}: {{traitement.prix}} $/</span> </td>
     </ng-container>
 
     <ng-container matColumnDef="liste_proprietaire">
-        <th mat-header-cell *matHeaderCellDef> Liste propriétaire </th>
+        <th mat-header-cell *matHeaderCellDef i18n> Liste propriétaire </th>
         <td mat-cell *matCellDef="let element"><span *ngFor="let proprietaire of element.liste_proprietaire">{{proprietaire.prenom}} {{proprietaire.nom}}: {{proprietaire.telephone}}</span> </td>
     </ng-container>
      

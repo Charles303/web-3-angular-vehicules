@@ -1,0 +1,45 @@
+<span i18n>Prix moyen par type(catégorie) de véhicules</span>
+<table mat-table #produitMatTable [dataSource]="statistiquePrix" class="mat-elevation-z8 margin">
+ 
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef i18n> Catégories </th>
+      <td mat-cell *matCellDef="let element"> {{element._id}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="moyenne">
+        <th mat-header-cell *matHeaderCellDef i18n> Moyenne </th>
+        <td mat-cell *matCellDef="let element"> {{element.moyenne}} </td>
+    </ng-container>
+     
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsPrix"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsPrix;"></tr>
+</table>
+<br>
+<span i18n>Nombre de véhicules pas type(catégorie)</span>
+<table mat-table #produitMatTable [dataSource]="statistiqueNb" class="mat-elevation-z8 margin">
+ 
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef i18n> Construceur </th>
+      <td mat-cell *matCellDef="let element"> {{element._id}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="nbVehicules">
+        <th mat-header-cell *matHeaderCellDef i18n> Nombre de véhicules </th>
+        <td mat-cell *matCellDef="let element"> {{element.nbVehicules}} </td>
+    </ng-container>
+     
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsNb"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsNb;"></tr>
+</table>

@@ -1,3 +1,6 @@
+<span i18n> - Utiliser id du véhicule à supprimer</span>
+<br>
+<span i18n> - ! Peut trouver l'id dans la tables des véhicules (infos véhicules)</span>
 <form #vehiculeFormAjout="ngForm" id="vehiculeFormAjout">
     <mat-form-field class="input-full-width">
         <input type="text" name="nom" required minlength="2" maxlength="50" [(ngModel)]="idVehicule" matInput #nom="ngModel" placeholder="Id">
@@ -9,5 +12,5 @@
 
     <button matSuffix  type="submit" mat-icon-button color="primary" [disabled]="!vehiculeFormAjout.form.valid" (click)="onDelete(idVehicule)"><i class="material-icons">add</i></button>
 
-    <small [hidden]="!afficherMessageDelete">Véhicule supprimé: </small>
+    <small [hidden]="!afficherMessageDelete">Véhicule supprimé </small>
 </form>
