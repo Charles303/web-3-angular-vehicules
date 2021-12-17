@@ -27,7 +27,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Procédure d'installation sur un poste local
+-ng serve -o pour lancer l'application dans le dossier racine.
+-changer les paramètres d'internationalisation dans le fichier angular.json pour avoir une version en anglais.
+-ajouter configuration=en, après ng serve, pour lancer l'application en anglais. 
 
 ## Description de l'application
+Présente une liste de véhicules avec quelques statistiques et autres sur ceux-ci. En rapport avec cette liste, on peut ajouter un véhicule avec un formulaire, supprimer avec l'id du véhicule et avoir accès à quelques statistiques.
 
 ## Url de l'application
+https://charles303.github.io/web-3-angular-vehicules/
